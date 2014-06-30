@@ -23,5 +23,11 @@ java.util.Date date = new java.util.Date();
     <%
      out.println(String.valueOf(date));
      %>
+
+    <ul>
+        <% for (int ii = 0; ii < 5; ii++) { %>
+          <li><%= ii + 1 %></li>
+        <% } %>
+    </ul>
   </body>
 </html>
