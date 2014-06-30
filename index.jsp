@@ -1,6 +1,7 @@
 <!DOCTYPE html>
+<%@ page import="java.util.Date" %>
 <%
-java.util.Date date = new java.util.Date();
+Date date = new java.util.Date();
 %>
 <html>
   <head>
@@ -26,8 +27,8 @@ java.util.Date date = new java.util.Date();
 
     <ul>
         <% for (int ii = 0; ii < 5; ii++) { %>
-          <li><%= ii + 1 %></li>
-        <% } %>
+        <li><%= ii + 1 %></li>
+        <% } // end ii %>
     </ul>
   </body>
 </html>
