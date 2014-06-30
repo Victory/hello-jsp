@@ -16,9 +16,12 @@ java.util.Date date = new java.util.Date();
       <li>
         user.home - <%= System.getProperty("user.home") %>
       </li>
+      <li>
+        Your IP - <%=request.getRemoteHost() %>
+      </li>
     </ul>
     <%
      out.println(String.valueOf(date));
-    %>
+     %>
   </body>
 </html>
