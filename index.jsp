@@ -17,5 +17,8 @@ java.util.Date date = new java.util.Date();
         user.home - <%= System.getProperty("user.home") %>
       </li>
     </ul>
+    <%
+     out.println(String.valueOf(date));
+    %>
   </body>
 </html>
