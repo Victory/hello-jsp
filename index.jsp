@@ -13,6 +13,7 @@ Date date = new java.util.Date();
       This is the actual current time <%=date %>
       according to java
     </p>
+    <%@ include file="more.jsp" %>
     <ul>
       <li>
         user.home - <%= System.getProperty("user.home") %>
