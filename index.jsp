@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <%@ page import="java.util.Date" %>
 <%
-Date date = new java.util.Date();
+Date date = new Date();
+%>
+<%!
+Date theDate = new Date();
+Date getDate()
+{
+   return theDate;
+}
 %>
 <html>
   <head>
@@ -10,7 +17,7 @@ Date date = new java.util.Date();
   <body>
     <p>Hello To my first JSP as .jsp</p>
     <p>
-      This is the actual current time <%=date %>
+      This is the actual current time <%=getDate() %>
       according to java
     </p>
     <%@ include file="more.jsp" %>
