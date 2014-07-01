@@ -30,6 +30,7 @@ Date getCurrentDate ()
       according to java
     </p>
     <%@ include file="more.jsp" %>
+    <jsp:include page="dynamic-more.jsp" />
     <ul>
       <li>
         user.home - <%= System.getProperty("user.home") %>
