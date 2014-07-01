@@ -5,9 +5,15 @@ Date date = new Date();
 %>
 <%!
 Date theDate = new Date();
-Date getDate()
+Date getDate ()
 {
    return theDate;
+}
+
+Date getCurrentDate ()
+{
+   Date curDate = new Date();
+   return curDate;
 }
 %>
 <html>
@@ -17,7 +23,10 @@ Date getDate()
   <body>
     <p>Hello To my first JSP as .jsp</p>
     <p>
-      This is the actual current time <%=getDate() %>
+      The time at declartion: <%=getDate() %>
+    </p>
+    <p>
+      This is the actual current time <%=getCurrentDate() %>
       according to java
     </p>
     <%@ include file="more.jsp" %>
