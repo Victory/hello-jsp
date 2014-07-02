@@ -39,10 +39,12 @@ Date getCurrentDate ()
         Your IP - <%=request.getRemoteHost() %>
       </li>
     </ul>
+    <p>
+      <a href="form.jsp">Try going to the form</a>
+    </p>
     <%
-     out.println(String.valueOf(date));
+     out.println("<p>" + String.valueOf(date) + "</p>");
      %>
-
     <ul>
         <% for (int ii = 0; ii < 5; ii++) { %>
         <li><%= ii + 1 %></li>
