@@ -16,6 +16,7 @@ Date getCurrentDate ()
    return curDate;
 }
 %>
+<jsp:useBean id="user" class="user.UserData" scope="session" />
 <html>
   <head>
     <title>Hello JSP</title>
